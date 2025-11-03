@@ -1,7 +1,7 @@
 ## Interface: 110200
-## Title: Loot Sell Repair
+## Title: Auto Vendor
 ## Notes: Auto-sells junk, repairs gear, and enables instant looting
 ## Author: MIYANKO
 ## Version: 1.0.0
 
-LootSellRepair.lua
+AutoVendor.lua
