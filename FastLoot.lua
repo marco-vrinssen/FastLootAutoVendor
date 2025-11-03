@@ -5,9 +5,8 @@ local lootDelay = 0.025
 
 local function lootAllSlots()
     local autoLootEnabled = GetCVarBool("autoLootDefault")
-    local shiftPressed = IsModifiedClick("AUTOLOOTTOGGLE")
     
-    if autoLootEnabled ~= shiftPressed then
+    if autoLootEnabled then
         if (GetTime() - lastLootTime) >= lootDelay then
             for slotIndex = GetNumLootItems(), 1, -1 do
                 LootSlot(slotIndex)
