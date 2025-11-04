@@ -17,6 +17,6 @@ local function loot()
 	end
 end
 
-local frame = CreateFrame("Frame")
-frame:RegisterEvent("LOOT_READY")
-frame:SetScript("OnEvent", loot)
+local lootFrame = CreateFrame("Frame")
+lootFrame:RegisterEvent("LOOT_READY")
+lootFrame:SetScript("OnEvent", loot)
