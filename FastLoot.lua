@@ -8,7 +8,7 @@ local function loot()
 			LootSlot(slot)
 		end
 		
-		C_Timer.After(0.1, function()
+		C_Timer.After(0.5, function()
 			if GetNumLootItems() == 0 then
 				CloseLoot()
 			end
